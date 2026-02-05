@@ -318,19 +318,31 @@ const App = () => {
               </h2>
               <div className="space-y-4 text-stone-600 leading-relaxed text-lg">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  "Desde pequena, aprendi a amar a culinária ao lado da minha vó
+                  Nida. Ela sempre preparava quitutes para nós, seus netos, e
+                  cada receita vinha acompanhada de amor e dedicação. Na cozinha
+                  dela descobri que cozinhar é muito mais do que misturar
+                  ingredientes — é cuidar, é acolher, é transmitir afeto.
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
+                  O tempo passou, e quando Deus chamou minha vó, fiquei com uma
+                  saudade enorme... mas também com uma herança preciosa: seus
+                  cadernos de receitas. Páginas gastas pelo tempo, mas cheias de
+                  histórias, lembranças e sabores que marcaram minha vida.
+                </p>
+                <p>
+                  Foi assim que nasceu a Vó Nida Confeitaria Artesanal: como uma
+                  forma de manter vivo esse legado e transformar saudade em
+                  homenagem. Aqui, cada doce carrega o amor da minha vó e o
+                  aconchego de sua cozinha.
+                </p>
+                <p>
+                  O lema “Gostoso como o abraço de vó” traduz exatamente isso:
+                  cada receita é um abraço apertado, cheio de carinho, que
+                  continua aquecendo corações."
                 </p>
                 <div className="pt-6 border-t border-pink-50 mt-6 italic text-pink-500 font-serif text-xl text-center">
-                  "O segredo é colocar amor em cada receita."
+                  - Mariana De Marchi Petelin, neta da Vó Nida e fundadora da confeitaria.
                 </div>
               </div>
             </div>
