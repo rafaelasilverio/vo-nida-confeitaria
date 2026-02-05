@@ -148,7 +148,7 @@ const App = () => {
           <div className="flex items-center gap-3 mb-4 sm:mb-0">
             <div className="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center overflow-hidden border-2 border-pink-200">
               <img
-                src="https://api.dicebear.com/7.x/initials/svg?seed=VN&backgroundColor=f472b6"
+                src="/logo-vonida.png"
                 alt="Vó Nida Logo"
                 className="w-full h-full object-cover"
               />
