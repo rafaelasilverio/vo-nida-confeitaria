@@ -306,10 +306,16 @@ const App = () => {
           </div>
         ) : (
           <div className="bg-white rounded-3xl overflow-hidden shadow-sm max-w-3xl mx-auto border border-pink-100">
-            <div className="h-64 bg-pink-100 flex items-center justify-center">
-              <span className="text-pink-300 font-serif italic text-2xl">
-                [Imagem da Confeitaria / Vó Nida]
-              </span>
+            {/* Seção Sobre Nós - Imagem */}
+            <div className="h-auto min-h-80 bg-pink-100 flex items-center justify-center overflow-hidden">
+              <img
+                src="/sobre-nos.png"
+                alt="Confeitaria Vó Nida"
+                className="max-h-[500px] w-auto object-contain" // Mostra a imagem inteira sem cortar
+                onError={(e) => {
+                  e.target.style.display = "none"; // Se a foto falhar, o espaço não fica feio
+                }}
+              />
             </div>
             <div className="p-8 md:p-12">
               <h2 className="text-3xl font-serif font-bold text-stone-700 mb-6 flex items-center gap-3">
@@ -342,7 +348,8 @@ const App = () => {
                   continua aquecendo corações."
                 </p>
                 <div className="pt-6 border-t border-pink-50 mt-6 italic text-pink-500 font-serif text-xl text-center">
-                  - Mariana De Marchi Petelin, neta da Vó Nida e fundadora da confeitaria.
+                  - Mariana De Marchi Petelin, neta da Vó Nida e fundadora da
+                  confeitaria.
                 </div>
               </div>
             </div>
