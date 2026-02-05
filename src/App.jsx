@@ -493,9 +493,9 @@ const App = () => {
 
           <div className="space-y-2">
             <p className="text-stone-400 text-xs italic opacity-75">
-              "Gostoso abraço de vó"
+              "Gostoso como o abraço de vó"
             </p>
-            <p className="text-white font-serif italic text-lg flex items-center justify-center gap-2">
+            <p className="text-stone-400 text-xs italic opacity-75 flex items-center justify-center gap-2">
               Site feito com amor por Rafaela Petelin, neta da Vó Nida{" "}
               <Heart size={16} className="fill-pink-500 text-pink-500" />
             </p>
