@@ -18,6 +18,18 @@ const App = () => {
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
+  // Mapa de nomes de arquivo de imagem para os IDs dos bolos
+  const imageMap = {
+    "beijinho": "beijinho",
+    "churros": "churros",
+    "cocadinha": "cocada",
+    "maracujá-cobert.-mousse": "maracujacobert.mousse",
+    "prestígio": "prestigio",
+    "chocolate-c/-brigadeiro": "chocolate",
+    "laranja-com-calda": "laranja",
+    "limão-com-calda": "limao",
+  };
+
   // Dados dos bolos baseados na imagem do cardápio
   const cakeData = [
     // Grupo 1: Médio R$22,00 | Grande R$37,00
@@ -211,8 +223,12 @@ const App = () => {
                 >
                   <div className="relative aspect-square bg-pink-50 rounded-2xl mb-4 overflow-hidden">
                     <img
-                      src={`/bolos/${cake.id}.jpg`}
+                      src={`/bolos/${imageMap[cake.id] || cake.id}.jpeg`}
                       alt={cake.name}
+                      onError={(e) => {
+                        const fallbackUrl = `https://api.dicebear.com/7.x/shapes/svg?seed=${cake.id}&backgroundColor=fbcfe8`;
+                        e.target.src = fallbackUrl;
+                      }}
                       className="w-full h-full object-cover opacity-80"
                     />
                     <span className="absolute top-3 left-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-pink-600 border border-pink-100">
